@@ -41,8 +41,11 @@ authRouter.post('/signup', async (req, res) => {
             });
             res.status(200).send(JSON.stringify({ error: false, message: 'user created successfully' }));
         }
-    } catch (e) {
-        res.status(e?.response?.status || 400).send(JSON.stringify({ error: true, message: e?.response?.data?.errorCauses }));
+    } catch (err) {
+        res.status(err?.response?.status || 400).send(JSON.stringify({
+            errorCode: err?.response?.data?.errorCode,
+            errorSummary: err?.response?.data?.errorCauses?.[0]?.errorSummary
+        }));
     }
 });
 
