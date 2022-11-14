@@ -1,12 +1,13 @@
+const Sentry = require('@sentry/node');
 const router = require('express').Router();
 
 const { logger } = require('../middlewares');
 
 router.use(logger);
 
-router.get('/', (req, res) => {
-    res.status(200).send('token valid');
-    // res.status(200).send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+router.get("/debug-sentry", function mainHandler(req, res) {
+    Sentry.captureException(new Error("My second Sentry error!"))
+    throw new Error("My second Sentry error!");
 });
 
 module.exports = { router };
