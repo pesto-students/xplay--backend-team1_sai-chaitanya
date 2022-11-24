@@ -1,0 +1,62 @@
+[
+    {
+        "movieId": 1,
+        "name": "Test Movie 1",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
+        "type": "latest"
+    },
+    {
+        "movieId": 2,
+        "name": "Test Movie 2",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
+        "type": "featured"
+    },
+    {
+        "movieId": 3,
+        "name": "Test Movie 3",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
+        "type": "watchlist"
+    },
+    {
+        "movieId": 4,
+        "name": "Test Movie 4",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
+        "type": "featured"
+    },
+    {
+        "movieId": 5,
+        "name": "Test Movie 5",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
+        "type": "latest"
+    },
+    {
+        "movieId": 6,
+        "name": "Test Movie 6",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
+        "type": "featured"
+    },
+    {
+        "movieId": 7,
+        "name": "Test Movie 7",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
+        "type": "latest"
+    },
+    {
+        "movieId": 8,
+        "name": "Test Movie 8",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
+        "type": "featured"
+    },
+    {
+        "movieId": 9,
+        "name": "Test Movie 9",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
+        "type": "latest"
+    },
+    {
+        "movieId": 10,
+        "name": "Test Movie 10",
+        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
+        "type": "featured"
+    }
+]
