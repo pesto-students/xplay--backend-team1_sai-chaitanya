@@ -1,9 +1,9 @@
 const cors = require('cors');
 const express = require('express');
-const bodyParser = require('body-parser');
 const Sentry = require('@sentry/node');
+const bodyParser = require('body-parser');
 
-const { authRouter, router, movieListRouter } = require('./routers');
+const { authRouter, moviesRouter } = require('./routers');
 const { CONFIG, corsOptions, getSentryConfig } = require('./config');
 const { errorHandler, rateLimiter, tokenVerifier } = require('./middlewares');
 
@@ -46,9 +46,9 @@ app.use(Sentry.Handlers.errorHandler({
 }));
 
 // checking for the valid headers
-// app.use(tokenVerifier);
+app.use(tokenVerifier);
 
-app.use('/api', movieListRouter);
+app.use('/api', moviesRouter);
 
 app.use(errorHandler);
 
