@@ -1,4 +1,4 @@
-const { PAST_INTERVAL_IN_DAYS } = require('./constants');
+const { STATIC_VALUES } = require('../constants');
 
 const { getPastDateByDays } = require("../../utils");
 
@@ -8,7 +8,7 @@ const getFilterByType = (type) => {
 	} else if (type === 'latest') {
 		return {
 			"publishedAt": {
-				$gte: getPastDateByDays(PAST_INTERVAL_IN_DAYS)
+				$gte: getPastDateByDays(STATIC_VALUES.PAST_INTERVAL_IN_DAYS)
 			}
 		};
 	}

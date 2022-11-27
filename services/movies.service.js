@@ -1,6 +1,7 @@
 const Sentry = require('@sentry/node');
 
 const { getCollection } = require('../db');
+const { COLLECTIONS } = require('./constants');
 const { getFilterByType } = require('./helpers');
 const { sendError, sendSuccess } = require('../utils');
 
@@ -15,7 +16,7 @@ const _getMovieListByType = async ({ type, query }) => {
 	try {
 		// TODO: pagination support
 		// const { limit = 10, offset = 0 } = query;
-		const movieCollection = await getCollection('movies');
+		const movieCollection = await getCollection(COLLECTIONS.MOVIES);
 		const movieListByType = await movieCollection.find(
 			getFilterByType(type)
 		).toArray();
@@ -33,7 +34,7 @@ const _getMovieListByType = async ({ type, query }) => {
  */
 const _getPromotedMovie = async () => {
 	try {
-		const movieCollection = await getCollection('movies');
+		const movieCollection = await getCollection(COLLECTIONS.MOVIES);
 		const promotedMovie = await movieCollection.findOne({ isPromoted: true });
 		return sendSuccess(promotedMovie);
 	} catch (error) {
