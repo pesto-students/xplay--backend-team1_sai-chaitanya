@@ -34,12 +34,6 @@ const createUserOnOkta = async (body) => {
                 statusCode: 400
             };
         } else {
-            console.log({
-                created: response?.created,
-                id: response?.id,
-                profile: response?.profile,
-                status: response?.status,
-            });
             return {
                 error: false,
                 message: 'user created successfully',
