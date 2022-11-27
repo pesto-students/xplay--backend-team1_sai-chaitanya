@@ -4,7 +4,6 @@ const { getCollection } = require('../db');
 const { getFilterByType } = require('./helpers');
 const { sendError, sendSuccess } = require('../utils');
 
-
 /**
  * @function _getMovieListByType a method to get list of movies for the given type
  * @param {String} type featured, latest, watchlist
