@@ -1,7 +1,4 @@
 module.exports = {
-    ...require('./router'),
-    ...require('./authRouter'),
-    ...require('./movieListRouter')
+    ...require('./auth.router'),
+    ...require('./movies.router')
 };
-
-// module.exports = require('./router');

@@ -1,62 +1,450 @@
 [
-    {
-        "movieId": 1,
-        "name": "Test Movie 1",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
-        "type": "latest"
-    },
-    {
-        "movieId": 2,
-        "name": "Test Movie 2",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
-        "type": "featured"
-    },
-    {
-        "movieId": 3,
-        "name": "Test Movie 3",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
-        "type": "watchlist"
-    },
-    {
-        "movieId": 4,
-        "name": "Test Movie 4",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
-        "type": "featured"
-    },
-    {
-        "movieId": 5,
-        "name": "Test Movie 5",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
-        "type": "latest"
-    },
-    {
-        "movieId": 6,
-        "name": "Test Movie 6",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
-        "type": "featured"
-    },
-    {
-        "movieId": 7,
-        "name": "Test Movie 7",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
-        "type": "latest"
-    },
-    {
-        "movieId": 8,
-        "name": "Test Movie 8",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
-        "type": "featured"
-    },
-    {
-        "movieId": 9,
-        "name": "Test Movie 9",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
-        "type": "latest"
-    },
-    {
-        "movieId": 10,
-        "name": "Test Movie 10",
-        "imageSource": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
-        "type": "featured"
-    }
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "sci-fi",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			},
+			{
+				"choices": {
+					"1": "Start raining",
+					"2": "Go winter"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "01:53:45",
+				"question": "Should it rain?"
+			}
+		],
+		"isFeatured": true,
+		"isPromoted": true,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "1",
+		"publishedAt": 1669458649782,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg"
+		],
+		"title": "The Amazing Spider Man 2",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Tushar Walzade",
+			"participants": [
+				"KK Wagh",
+				"Suresh Kumar",
+				"Aditya Vinayak",
+				"Harish Rustybat"
+			],
+			"sessionId": "123456789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "sci-fi",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": false,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "2",
+		"publishedAt": 1664582400000,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg"
+		],
+		"title": "Test Movie 2",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Suresh Kumar",
+			"participants": [
+				"Suresh Kumar",
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak"
+			],
+			"sessionId": "321456789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "comedy",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": true,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "3",
+		"publishedAt": 1669458649782,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg"
+		],
+		"title": "Test Movie 3",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Manish More",
+			"participants": [
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak",
+				"Suresh Kumar"
+			],
+			"sessionId": "321654789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "adventure",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": true,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "4",
+		"publishedAt": 1665792000000,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg"
+		],
+		"title": "Test Movie 4",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Sumit More",
+			"participants": [
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak",
+				"Suresh Kumar"
+			],
+			"sessionId": "321654789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "drama",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": true,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "5",
+		"publishedAt": 1669458649782,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg"
+		],
+		"title": "Test Movie 5",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Vaibhav Salve",
+			"participants": [
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak",
+				"Suresh Kumar"
+			],
+			"sessionId": "321654987"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "sci-fi",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			},
+			{
+				"choices": {
+					"1": "Start raining",
+					"2": "Go winter"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "01:53:45",
+				"question": "Should it rain?"
+			}
+		],
+		"isFeatured": false,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "6",
+		"publishedAt": 1667088000000,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg"
+		],
+		"title": "The Amazing Spider Man 2",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Tushar Walzade",
+			"participants": [
+				"KK Wagh",
+				"Suresh Kumar",
+				"Aditya Vinayak",
+				"Harish Rustybat"
+			],
+			"sessionId": "123456789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "sci-fi",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": true,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "7",
+		"publishedAt": 1669458649782,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg"
+		],
+		"title": "Test Movie 2",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Suresh Kumar",
+			"participants": [
+				"Suresh Kumar",
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak"
+			],
+			"sessionId": "321456789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "comedy",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": true,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "8",
+		"publishedAt": 1669766400000,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg"
+		],
+		"title": "Test Movie 3",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Manish More",
+			"participants": [
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak",
+				"Suresh Kumar"
+			],
+			"sessionId": "321654789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "adventure",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": false,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "9",
+		"publishedAt": 1669458649782,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg"
+		],
+		"title": "Test Movie 4",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Sumit More",
+			"participants": [
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak",
+				"Suresh Kumar"
+			],
+			"sessionId": "321654789"
+		}
+	},
+	{
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
+		"createdAt": 1669458649782,
+		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"genre": "drama",
+		"interactionsData": [
+			{
+				"choices": {
+					"1": "Fight with villains",
+					"2": "Save Julia"
+				},
+				"defaultChoice": "1",
+				"displayTimestamp": "00:45:30",
+				"question": "What should Vivek do?"
+			}
+		],
+		"isFeatured": true,
+		"isPromoted": false,
+		"isPublished": true,
+		"length": "2h 22m",
+		"metadata": {
+			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
+			"director": "S. Kumar"
+		},
+		"movieId": "10",
+		"publishedAt": 1669458649782,
+		"tagLine": "Welcome Home",
+		"thumbnails": [
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg"
+		],
+		"title": "Test Movie 5",
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
+		"watchParty": {
+			"host": "Vaibhav Salve",
+			"participants": [
+				"KK Wagh",
+				"Harish Rustybat",
+				"Aditya Vinayak",
+				"Suresh Kumar"
+			],
+			"sessionId": "321654987"
+		}
+	}
 ]
