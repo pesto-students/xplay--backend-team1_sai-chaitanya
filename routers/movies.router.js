@@ -3,9 +3,11 @@ require('dotenv').config();
 const moviesRouter = require('express').Router();
 
 const { logger } = require('../middlewares');
-const { getMovieListByType, getPromotedMovie } = require('../controllers');
+const { getMovieListByType, getPromotedMovie, getMovieById } = require('../controllers');
 
 moviesRouter.use(logger);
+
+moviesRouter.get('/movie/:id', getMovieById);
 
 moviesRouter.get('/promotedMovie', getPromotedMovie);
 

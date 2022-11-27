@@ -1,9 +1,27 @@
 const Sentry = require('@sentry/node');
+const { ObjectId } = require('mongodb');
 
 const { getCollection } = require('../db');
 const { COLLECTIONS } = require('./constants');
 const { getFilterByType } = require('./helpers');
 const { sendError, sendSuccess } = require('../utils');
+
+/**
+ * @function _getMovieById a method to get a movie by its ObjetID
+ * @param {String} id an ObjectID of a movie
+ * @example http://localhost:8080/api/movie/63825dd8aced639172b2b831
+ * @returns data on success, error on failure
+ */
+const _getMovieById = async (id) => {
+	try {
+		const movieCollection = await getCollection(COLLECTIONS.MOVIES);
+		const movieData = await movieCollection.find(ObjectId(id)).toArray();
+		return sendSuccess(movieData);
+	} catch (error) {
+		Sentry.captureException(error);
+		return sendError(error);
+	}
+};
 
 /**
  * @function _getMovieListByType a method to get list of movies for the given type
@@ -44,6 +62,7 @@ const _getPromotedMovie = async () => {
 };
 
 module.exports = {
+	_getMovieById,
 	_getPromotedMovie,
 	_getMovieListByType
 };
