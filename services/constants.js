@@ -1,5 +1,6 @@
 const COLLECTIONS = {
-	MOVIES: 'movies'
+	MOVIES: 'movies',
+	USERS: 'users'
 };
 
 const STATIC_VALUES = {

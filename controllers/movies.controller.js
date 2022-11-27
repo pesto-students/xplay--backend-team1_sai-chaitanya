@@ -1,4 +1,13 @@
-const { _getMovieListByType, _getPromotedMovie } = require("../services");
+const { _getMovieListByType, _getPromotedMovie, _getMovieById } = require("../services");
+
+const getMovieById = async (req, res) => {
+	try {
+		const data = await _getMovieById(req.params.id);
+		res.send(data);
+	} catch (error) {
+		res.send(error);
+	}
+};
 
 const getMovieListByType = async (req, res) => {
 	try {
@@ -22,6 +31,7 @@ const getPromotedMovie = async (req, res) => {
 };
 
 module.exports = {
+	getMovieById,
 	getPromotedMovie,
 	getMovieListByType
 };
