@@ -15,7 +15,7 @@ const { sendError, sendSuccess } = require('../utils');
 const _getMovieById = async (id) => {
 	try {
 		const movieCollection = await getCollection(COLLECTIONS.MOVIES);
-		const movieData = await movieCollection.find(ObjectId(id)).toArray();
+		const movieData = await movieCollection.findOne(ObjectId(id));
 		return sendSuccess(movieData);
 	} catch (error) {
 		Sentry.captureException(error);
