@@ -1,9 +1,25 @@
 const Sentry = require('@sentry/node');
 
-const { getCollection } = require('../db');
-const { COLLECTIONS } = require('./constants');
+const { getCollection } = require('../../db');
+const { COLLECTIONS } = require('../constants');
 const { createUserOnOkta } = require('./helpers');
-const { sendError, sendSuccess } = require('../utils');
+const { sendError, sendSuccess } = require('../../utils');
+
+/**
+ * @function _getUsers a method to get list of users
+ * @example http://localhost:8080/api/auth/users
+ * @returns data on success, error on failure
+ */
+const _getUsers = async () => {
+    try {
+        const usersCollection = await getCollection(COLLECTIONS.USERS);
+        const users = await usersCollection.find().toArray();
+		return sendSuccess(users);
+    } catch (error) {
+        Sentry.captureException(error);
+        return sendError(error);
+    }
+};
 
 /**
  * @function _signUp a method to create a user on Okta
@@ -42,5 +58,6 @@ const _signUp = async (body) => {
 };
 
 module.exports = {
-    _signUp
+    _signUp,
+    _getUsers
 };

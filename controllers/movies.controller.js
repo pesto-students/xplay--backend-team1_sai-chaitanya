@@ -1,10 +1,20 @@
 const {
 	_getMoviesByType,
+	_createWatchParty,
 	_getMoviesByGenre,
 	_getPromotedMovie,
 	_getMovieDetailsById,
 	_searchMoviesByTitle,
 } = require('../services');
+
+const createWatchParty = async (req, res) => {
+	try {
+		const data = await _createWatchParty(req.body);
+		res.send(data);
+	} catch (error) {
+		res.send(error);
+	}
+};
 
 const getMovieById = async (req, res) => {
 	try {
@@ -63,6 +73,7 @@ const searchMoviesByTitle = async (req, res) => {
 module.exports = {
 	getMovieById,
 	getMoviesByType,
+	createWatchParty,
 	getMoviesByGenre,
 	getPromotedMovie,
 	searchMoviesByTitle,

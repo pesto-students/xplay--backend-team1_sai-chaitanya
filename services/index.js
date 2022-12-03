@@ -1,4 +1,4 @@
 module.exports = {
-	...require('./auth.service'),
-	...require('./movies.service')
+	...require('./auth'),
+	...require('./movies')
 };
