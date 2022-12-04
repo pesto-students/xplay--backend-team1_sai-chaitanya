@@ -46,7 +46,7 @@ app.use(Sentry.Handlers.errorHandler({
 }));
 
 // checking for the valid headers
-app.use(tokenVerifier);
+// app.use(tokenVerifier);
 
 app.use('/api', moviesRouter);
 

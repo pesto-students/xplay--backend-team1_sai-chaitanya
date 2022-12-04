@@ -1,9 +1,9 @@
 [
 	{
-		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1670090381/movies/the-beasts-of-bangalore-indian-predator-social-feature.jpg",
 		"createdAt": 1669458649782,
-		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
-		"genre": "sci-fi",
+		"description": "A dangerous predator on the streets of Bangalore - lurking in the shadows leaving women feeling unsafe. He changed the whole landscape of this city.\n\nFind out more about the beast in Beast of Bangalore on 16th December, only on XPlay",
+		"genre": "horror",
 		"interactionsData": [
 			{
 				"choices": {
@@ -11,7 +11,7 @@
 					"2": "Save Julia"
 				},
 				"defaultChoice": "1",
-				"displayTimestamp": "00:45:30",
+				"displayTimestamp": "00:00:30",
 				"question": "What should Vivek do?"
 			},
 			{
@@ -20,41 +20,30 @@
 					"2": "Go winter"
 				},
 				"defaultChoice": "1",
-				"displayTimestamp": "01:53:45",
+				"displayTimestamp": "00:01:10",
 				"question": "Should it rain?"
 			}
 		],
 		"isFeatured": true,
 		"isPromoted": true,
 		"isPublished": true,
-		"length": "2h 22m",
+		"length": "1m 29s",
 		"metadata": {
-			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
-			"director": "S. Kumar"
+			"cast": "Vijay (Agent Veera Raghavan), Pooja Hegde (Preethi) and Selvaraghavan (Althaf Hussain)",
+			"director": "Nelson"
 		},
-		"movieId": "1",
 		"publishedAt": 1669458649782,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
-			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg"
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1670090825/movies/fbbq3pd0f6i4ysxkg2vz.jpg"
 		],
-		"title": "The Amazing Spider Man 2",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Tushar Walzade",
-			"participants": [
-				"KK Wagh",
-				"Suresh Kumar",
-				"Aditya Vinayak",
-				"Harish Rustybat"
-			],
-			"sessionId": "123456789"
-		}
+		"title": "Beast of Bangalore",
+		"url": "https://www.youtube.com/watch?v=ZnJjCvNrJRc"
 	},
 	{
-		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1670091458/movies/images.jpg",
 		"createdAt": 1669458649782,
-		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
+		"description": "Peter Parker (Tobey Maguire) gives up his crime-fighting identity of Spider-Man in a desperate attempt to return to ordinary life and keep the love of MJ (Kirsten Dunst).  But a ruthless, terrifying new villain, the multi-tentacled Doc Ock, forces Peter to swing back into action to save everything he holds dear. CBFC U, CFL/1/36/2004-Mum.",
 		"genre": "sci-fi",
 		"interactionsData": [
 			{
@@ -63,42 +52,31 @@
 					"2": "Save Julia"
 				},
 				"defaultChoice": "1",
-				"displayTimestamp": "00:45:30",
+				"displayTimestamp": "00:01:30",
 				"question": "What should Vivek do?"
 			}
 		],
 		"isFeatured": false,
 		"isPromoted": false,
 		"isPublished": true,
-		"length": "2h 22m",
+		"length": "1m 22s",
 		"metadata": {
-			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
-			"director": "S. Kumar"
+			"cast": "Tobey Maguire, Kirsten Dunst, James Franco, Alfred Molina, Rosemary Harris, Donna Murphy",
+			"director": "Sam Raimi"
 		},
-		"movieId": "2",
 		"publishedAt": 1664582400000,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
-			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg"
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1670090916/movies/7e42ca11-be74-41b9-986c-3e5a8a431fe3.jpg"
 		],
-		"title": "Test Movie 2",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Suresh Kumar",
-			"participants": [
-				"Suresh Kumar",
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak"
-			],
-			"sessionId": "321456789"
-		}
+		"title": "The Amazing Spider Man 2",
+		"url": "https://www.youtube.com/watch?v=n0fRSnKZqGc"
 	},
 	{
-		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1670092056/movies/dalit-group-condemns-daivardhane-sequences-of-superhit-kannada-movie-kantara-001.jpg",
 		"createdAt": 1669458649782,
-		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
-		"genre": "comedy",
+		"description": "A death in the village of Dakshina Kannada leads to a war between the villagers and the forces of evil.",
+		"genre": "action",
 		"interactionsData": [
 			{
 				"choices": {
@@ -113,35 +91,24 @@
 		"isFeatured": true,
 		"isPromoted": false,
 		"isPublished": true,
-		"length": "2h 22m",
+		"length": "2h 27m 52s",
 		"metadata": {
-			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
-			"director": "S. Kumar"
+			"cast": "Rishab Shetty (Kaadubettu Shiva), Sapthami Gowda (Leela), Kishore Kumar G (Muralidhar), Manasi Sudhir (Kamala), Achyuth Kumar (Devendra Suttooru)",
+			"director": "Rishab Shetty"
 		},
-		"movieId": "3",
 		"publishedAt": 1669458649782,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
-			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg"
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1670092011/movies/kantara.jpg"
 		],
-		"title": "Test Movie 3",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Manish More",
-			"participants": [
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak",
-				"Suresh Kumar"
-			],
-			"sessionId": "321654789"
-		}
+		"title": "Kantara",
+		"url": "https://www.youtube.com/watch?v=6u4yYyCj4ZQ"
 	},
 	{
-		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
+		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1670092533/movies/maxresdefault.jpg",
 		"createdAt": 1669458649782,
-		"description": "A mythic and emotionally charged hero's journey, \"Dune\" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people",
-		"genre": "adventure",
+		"description": "RC15 is the working title of an upcoming Telugu-language political thriller film directed by S. Shankar who also wrote the screenplay, based on a story by Karthik Subbaraj. Produced by Dil Raju and Sirish under Sri Venkateswara Creations, the film stars Ram Charan and Kiara Advani.",
+		"genre": "action",
 		"interactionsData": [
 			{
 				"choices": {
@@ -156,29 +123,18 @@
 		"isFeatured": true,
 		"isPromoted": false,
 		"isPublished": true,
-		"length": "2h 22m",
+		"length": "2h 08m 30s",
 		"metadata": {
-			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
-			"director": "S. Kumar"
+			"cast": "Ram Charan, Kiara Advani",
+			"director": "S. Shankar"
 		},
-		"movieId": "4",
 		"publishedAt": 1665792000000,
-		"tagLine": "Welcome Home",
+		"tagLine": "We are coming",
 		"thumbnails": [
-			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg"
+			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1670092456/movies/Ram_Charan_Shankar.jpg"
 		],
-		"title": "Test Movie 4",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Sumit More",
-			"participants": [
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak",
-				"Suresh Kumar"
-			],
-			"sessionId": "321654789"
-		}
+		"title": "RC 15",
+		"url": "https://www.youtube.com/watch?v=6UvCUBDQiz8"
 	},
 	{
 		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
@@ -204,24 +160,13 @@
 			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
 			"director": "S. Kumar"
 		},
-		"movieId": "5",
 		"publishedAt": 1669458649782,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
 			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg"
 		],
 		"title": "Test Movie 5",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Vaibhav Salve",
-			"participants": [
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak",
-				"Suresh Kumar"
-			],
-			"sessionId": "321654987"
-		}
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q"
 	},
 	{
 		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg",
@@ -256,24 +201,13 @@
 			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
 			"director": "S. Kumar"
 		},
-		"movieId": "6",
 		"publishedAt": 1667088000000,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
 			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043800/movies/third.jpg"
 		],
 		"title": "The Amazing Spider Man 2",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Tushar Walzade",
-			"participants": [
-				"KK Wagh",
-				"Suresh Kumar",
-				"Aditya Vinayak",
-				"Harish Rustybat"
-			],
-			"sessionId": "123456789"
-		}
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q"
 	},
 	{
 		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg",
@@ -299,24 +233,13 @@
 			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
 			"director": "S. Kumar"
 		},
-		"movieId": "7",
 		"publishedAt": 1669458649782,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
 			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043788/movies/fourth.jpg"
 		],
 		"title": "Test Movie 2",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Suresh Kumar",
-			"participants": [
-				"Suresh Kumar",
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak"
-			],
-			"sessionId": "321456789"
-		}
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q"
 	},
 	{
 		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg",
@@ -342,24 +265,13 @@
 			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
 			"director": "S. Kumar"
 		},
-		"movieId": "8",
 		"publishedAt": 1669766400000,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
 			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043790/movies/first.jpg"
 		],
 		"title": "Test Movie 3",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Manish More",
-			"participants": [
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak",
-				"Suresh Kumar"
-			],
-			"sessionId": "321654789"
-		}
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q"
 	},
 	{
 		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg",
@@ -385,24 +297,13 @@
 			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
 			"director": "S. Kumar"
 		},
-		"movieId": "9",
 		"publishedAt": 1669458649782,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
 			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043794/movies/second.jpg"
 		],
 		"title": "Test Movie 4",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Sumit More",
-			"participants": [
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak",
-				"Suresh Kumar"
-			],
-			"sessionId": "321654789"
-		}
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q"
 	},
 	{
 		"coverImageUrl": "https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg",
@@ -428,23 +329,12 @@
 			"cast": "Lorem ipsum (Black Widow), sit amet (Wolverine), consectetur adipiscing (XMan). Lobortis enim (Spider Man)",
 			"director": "S. Kumar"
 		},
-		"movieId": "10",
 		"publishedAt": 1669458649782,
 		"tagLine": "Welcome Home",
 		"thumbnails": [
 			"https://res.cloudinary.com/tusharwalzade216/image/upload/v1669043796/movies/fifth.jpg"
 		],
 		"title": "Test Movie 5",
-		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q",
-		"watchParty": {
-			"host": "Vaibhav Salve",
-			"participants": [
-				"KK Wagh",
-				"Harish Rustybat",
-				"Aditya Vinayak",
-				"Suresh Kumar"
-			],
-			"sessionId": "321654987"
-		}
+		"url": "https://www.youtube.com/watch?v=kvkAoCbTM3Q"
 	}
 ]
