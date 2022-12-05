@@ -17,7 +17,7 @@ moviesRouter.get('/promotedMovie', getPromotedMovie);
 
 moviesRouter.get('/movieList/:type', getMoviesByType);
 
-moviesRouter.get('/movieList/genre/:genre', getMoviesByGenre);
+moviesRouter.get('/movieList/genre/:genre/:id?', getMoviesByGenre);
 
 moviesRouter.get('/movieList/search/:title', searchMoviesByTitle);
 

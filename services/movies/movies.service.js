@@ -3,7 +3,7 @@ const { ObjectId } = require('mongodb');
 
 const { getCollection } = require('../../db');
 const { COLLECTIONS } = require('../constants');
-const { getFilterByType } = require('./helpers');
+const { getFilterByType, getGenreFilter } = require('./helpers');
 const { sendError, sendSuccess } = require('../../utils');
 
 /**
@@ -48,18 +48,19 @@ const _getMoviesByType = async ({ type, query }) => {
 /**
  * @function _getMoviesByGenre a method to get list of movies for the given genre
  * @param {String} genre comedy, sci-fi etc
+ * @param {String} id an ObjectId of a movie to not include in the results
  * @param {Object} query - search query params (limit, offset)
- * @example http://localhost:8080/api/movieList/genre/sci-fi
+ * @example http://localhost:8080/api/movieList/genre/sci-fi/63825dd8aced639172b2b831
  * @returns data on success, error on failure
  */
-const _getMoviesByGenre = async ({ genre, query }) => {
+const _getMoviesByGenre = async ({ genre, id, query }) => {
 	try {
 		// TODO: pagination support
 		// const { limit = 10, offset = 0 } = query;
 		const movieCollection = await getCollection(COLLECTIONS.MOVIES);
-		const movieListByType = await movieCollection.find({
-			'genre': genre
-		}).toArray();
+		const movieListByType = await movieCollection.find(
+			getGenreFilter(genre, id)
+		).toArray();
 		return sendSuccess(movieListByType);
 	} catch (error) {
 		Sentry.captureException(error);

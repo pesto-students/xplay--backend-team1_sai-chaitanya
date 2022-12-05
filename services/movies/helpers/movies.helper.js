@@ -1,5 +1,7 @@
+const { ObjectId } = require('mongodb');
+
 const { STATIC_VALUES } = require('../../constants');
-const { getPastDateByDays } = require("../../../utils");
+const { getPastDateByDays } = require('../../../utils');
 
 const getFilterByType = (type) => {
 	if (type === 'featured') {
@@ -14,6 +16,15 @@ const getFilterByType = (type) => {
 	return {};
 };
 
+const getGenreFilter = (genre, id) => {
+	if (id) {
+		return { "genre": genre, '_id': { $ne: ObjectId(id) } };
+	} else {
+		return { "genre": genre };
+	}
+};
+
 module.exports = {
+	getGenreFilter,
 	getFilterByType
 };

@@ -31,6 +31,7 @@ const getMoviesByGenre = async (req, res) => {
 	try {
 		const data = await _getMoviesByGenre({
 			genre: req.params.genre,
+			id: req.params?.id || '',
 			query: req.query
 		});
 		res.send(data);
