@@ -9,7 +9,7 @@ const { errorHandler, rateLimiter, tokenVerifier } = require('./middlewares');
 
 const app = express();
 // const port = CONFIG.PORT;
-const PORT=process.env.PORT || 3000
+const port=3000;
 
 Sentry.init(getSentryConfig(app));
 
@@ -53,4 +53,4 @@ app.use('/api', moviesRouter);
 
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Listening on port ${PORT}..`));
+app.listen(3000, () => console.log(`Listening on port ${port}..`));
