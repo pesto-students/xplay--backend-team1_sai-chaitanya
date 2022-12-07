@@ -1,4 +1,5 @@
 module.exports = {
 	...require('./auth'),
-	...require('./movies')
+	...require('./movies'),
+	...require('./watchParties')
 };

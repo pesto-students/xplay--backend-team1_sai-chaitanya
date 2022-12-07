@@ -1,6 +1,7 @@
-const { getOtp } = require('../movies.utils');
+const { ObjectId } = require('mongodb');
+
 const { STATIC_VALUES } = require('../../constants');
-const { getPastDateByDays } = require("../../../utils");
+const { getPastDateByDays } = require('../../../utils');
 
 const getFilterByType = (type) => {
 	if (type === 'featured') {
@@ -15,32 +16,15 @@ const getFilterByType = (type) => {
 	return {};
 };
 
-const getWatchPartyObject = (body) => ({
-	"endedAt": null,
-	"movieId": body?.movieId,
-	"name": body?.watchPartyName,
-	"otp": getOtp(),
-	"startedAt": Date.now(),
-	"status": "ready"
-});
-
-const getWatchPartyUsersArray = (body, watchPartyId) => {
-	const watchPartyUsers = [];
-
-	body?.attendees?.forEach((attendee) => {
-		watchPartyUsers.push({
-			"isHost": attendee === body?.host,
-			"isJoined": false,
-			"watchPartyId": watchPartyId,
-			"userId": attendee
-		});
-	});
-
-	return watchPartyUsers;
-}
+const getGenreFilter = (genre, id) => {
+	if (id) {
+		return { "genre": genre, '_id': { $ne: ObjectId(id) } };
+	} else {
+		return { "genre": genre };
+	}
+};
 
 module.exports = {
-	getFilterByType,
-	getWatchPartyObject,
-	getWatchPartyUsersArray
+	getGenreFilter,
+	getFilterByType
 };

@@ -1,20 +1,10 @@
 const {
 	_getMoviesByType,
-	_createWatchParty,
 	_getMoviesByGenre,
 	_getPromotedMovie,
 	_getMovieDetailsById,
 	_searchMoviesByTitle,
 } = require('../services');
-
-const createWatchParty = async (req, res) => {
-	try {
-		const data = await _createWatchParty(req.body);
-		res.send(data);
-	} catch (error) {
-		res.send(error);
-	}
-};
 
 const getMovieById = async (req, res) => {
 	try {
@@ -41,6 +31,7 @@ const getMoviesByGenre = async (req, res) => {
 	try {
 		const data = await _getMoviesByGenre({
 			genre: req.params.genre,
+			id: req.params?.id || '',
 			query: req.query
 		});
 		res.send(data);
@@ -73,7 +64,6 @@ const searchMoviesByTitle = async (req, res) => {
 module.exports = {
 	getMovieById,
 	getMoviesByType,
-	createWatchParty,
 	getMoviesByGenre,
 	getPromotedMovie,
 	searchMoviesByTitle,

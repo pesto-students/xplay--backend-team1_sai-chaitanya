@@ -1,47 +1,10 @@
 const Sentry = require('@sentry/node');
 const { ObjectId } = require('mongodb');
 
-const {
-	getFilterByType,
-	getWatchPartyObject,
-	getWatchPartyUsersArray
-} = require('./helpers');
 const { getCollection } = require('../../db');
 const { COLLECTIONS } = require('../constants');
+const { getFilterByType, getGenreFilter } = require('./helpers');
 const { sendError, sendSuccess } = require('../../utils');
-
-/**
- * @function _createWatchParty a method to get a movie by its ObjetID
- * @param {Object} body an input Object of a watch party
- * @example http://localhost:8080/api/watchParty
- * @body {
- * 		attendees: ['638b2ca422faf62fa16ee5f6', '638b203322faf62fa16ee5f4'],
- * 		host: '638b2ca422faf62fa16ee5f6',
- * 		movieId: "63825dd8aced639172b2b831",
- * 		watchPartyName: "Tushar's Watch Party"
- * }
- * @returns data (otp, watchPartyId) on success, error on failure
- */
-const _createWatchParty = async (body) => {
-	try {
-		/* 1. insert an entry into watch party collection */
-		const watchPartyObject = getWatchPartyObject(body);
-		const watchPartiesCollection = await getCollection(COLLECTIONS.WATCH_PARTIES);
-		const insertWatchParty = await watchPartiesCollection.insertOne(watchPartyObject);
-		/* 2. insert an entry into watchPartyUsers collection */
-		const watchPartyUser = getWatchPartyUsersArray(body, insertWatchParty?.insertedId);
-		const watchPartiesUsersCollection = await getCollection(COLLECTIONS.WATCH_PARTIES_USERS);
-		const insertWatchPartyUser = await watchPartiesUsersCollection.insertMany(watchPartyUser);
-		const resType = insertWatchPartyUser?.acknowledged ? sendSuccess : sendError;
-		return resType({
-			otp: watchPartyObject.otp,
-			watchPartyId: insertWatchParty?.insertedId
-		});
-	} catch (error) {
-		Sentry.captureException(error);
-		return sendError(error);
-	}
-};
 
 /**
  * @function _getMovieDetailsById a method to get a movie by its ObjetID
@@ -85,18 +48,19 @@ const _getMoviesByType = async ({ type, query }) => {
 /**
  * @function _getMoviesByGenre a method to get list of movies for the given genre
  * @param {String} genre comedy, sci-fi etc
+ * @param {String} id an ObjectId of a movie to not include in the results
  * @param {Object} query - search query params (limit, offset)
- * @example http://localhost:8080/api/movieList/genre/sci-fi
+ * @example http://localhost:8080/api/movieList/genre/sci-fi/63825dd8aced639172b2b831
  * @returns data on success, error on failure
  */
-const _getMoviesByGenre = async ({ genre, query }) => {
+const _getMoviesByGenre = async ({ genre, id, query }) => {
 	try {
 		// TODO: pagination support
 		// const { limit = 10, offset = 0 } = query;
 		const movieCollection = await getCollection(COLLECTIONS.MOVIES);
-		const movieListByType = await movieCollection.find({
-			'genre': genre
-		}).toArray();
+		const movieListByType = await movieCollection.find(
+			getGenreFilter(genre, id)
+		).toArray();
 		return sendSuccess(movieListByType);
 	} catch (error) {
 		Sentry.captureException(error);
@@ -144,7 +108,6 @@ const _searchMoviesByTitle = async ({ title, query }) => {
 
 module.exports = {
 	_getMoviesByType,
-	_createWatchParty,
 	_getMoviesByGenre,
 	_getPromotedMovie,
 	_getMovieDetailsById,

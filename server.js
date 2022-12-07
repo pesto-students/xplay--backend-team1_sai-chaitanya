@@ -3,7 +3,8 @@ const express = require('express');
 const Sentry = require('@sentry/node');
 const bodyParser = require('body-parser');
 
-const { authRouter, moviesRouter } = require('./routers');
+const { initSocket } = require('./socket');
+const { authRouter, moviesRouter, watchPartyRouter } = require('./routers');
 const { CONFIG, corsOptions, getSentryConfig } = require('./config');
 const { errorHandler, rateLimiter, tokenVerifier } = require('./middlewares');
 
@@ -48,8 +49,14 @@ app.use(Sentry.Handlers.errorHandler({
 // checking for the valid headers
 // app.use(tokenVerifier);
 
+app.use('/api/watchParty', watchPartyRouter);
+
 app.use('/api', moviesRouter);
 
 app.use(errorHandler);
 
-app.listen(port, () => console.log(`Listening on port ${port}..`));
+const server = require('http').createServer(app);
+
+initSocket(server);
+
+server.listen(port, () => console.log(`Listening on port ${port}..`));
