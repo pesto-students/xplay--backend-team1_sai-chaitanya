@@ -6,21 +6,25 @@ It is designed to attract various users from the video game and movie industry. 
 
 XPlay allows users to watch interactive movies on Smart Devices, with ease.
 
-## Who is this for?
-
-All the users from OTT platform and gaming industry who want to be able to interact with the movies/ alter what they are watching on their Smart devices connected to the internet.
-
-## How do they Benefit?
-
-XPlay is a platform where viewers can interact with the film and influence the events that unfold in the film.
-
-## How is this different?
-
-In a regular movie/cinematic experience, the viewer lacks the option to alter events unfolding within the film. In video games, the player is given the freedom to interact with the game and alter the storyline.
-
-Interactive movies are a combination of both cinematic experience and altering the storyline as per the user's choice.
-
-The goal of XPlay is to give the viewer the possibility to alter the story, while still enjoying a cinematic experience.
+## Table of Contents
+- [XPlay](#xplay)
+  - [Table of Contents](#table-of-contents)
+  - [Live Link](#live-link)
+      - [Guest Login -](#guest-login--)
+  - [Installation](#installation)
+    - [`yarn install`](#yarn-install)
+    - [`yarn start`](#yarn-start)
+    - [`yarn test`](#yarn-test)
+  - [System Requirements](#system-requirements)
+  - [Environment](#environment)
+  - [Designs](#designs)
+    - [HLD:](#hld)
+    - [PRD:](#prd)
+    - [Wireframes:](#wireframes)
+  - [Tech Stack](#tech-stack)
+  - [Developers](#developers)
+  - [Credits/ Guidence](#credits-guidence)
+  - [License](#license)
 
 ## Live Link
 
@@ -30,7 +34,7 @@ The goal of XPlay is to give the viewer the possibility to alter the story, whil
 
 guest@xplay.com : Secure123
 
-## Usage
+## Installation
 
 This project has a React JS frontend located here - https://github.com/pesto-students/xplay--frontend-team1_sai-chaitanya
 
@@ -99,19 +103,17 @@ Following environment variables need to be set for the application to run -
 
 ## Tech Stack
 
-- Frontend - React, Redux
+-   Backend - NodeJS, Express, Socket.io
 
-- Backend - NodeJS, Express, Socket.io
+-   Deployment - Vercel, CI/CD
 
-- Deployment - Netlify, Vercel, CI/CD
+-   Database - Mongo DB
 
-- Database - Mongo DB
+-   JWT Verifier - Okta
 
-- Authentication - Okta
+-   Logging - Sentry
 
-- Logging - Sentry
-
-- Tools - Version Control System (GIT), Github, Cloudinary
+-   Tools - Version Control System (GIT), Github
 
 ## Developers
 
@@ -122,3 +124,7 @@ Following environment variables need to be set for the application to run -
 ## Credits/ Guidence
 
 - [Sai Chaitanya Ramineni](https://github.com/sairamin)
+
+## License
+
+This project is developed under [MIT License](LICENSE.txt)
