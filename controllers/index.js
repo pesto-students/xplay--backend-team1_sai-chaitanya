@@ -1,5 +1,5 @@
 module.exports = {
-	...require('./auth.controller'),
-	...require('./movies.controller'),
-	...require('./watchParty.controller')
+	...require('./auth'),
+	...require('./movies'),
+	...require('./watchParty')
 };

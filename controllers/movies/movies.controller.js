@@ -4,7 +4,7 @@ const {
 	_getPromotedMovie,
 	_getMovieDetailsById,
 	_searchMoviesByTitle,
-} = require('../services');
+} = require('../../services');
 
 const getMovieById = async (req, res) => {
 	try {

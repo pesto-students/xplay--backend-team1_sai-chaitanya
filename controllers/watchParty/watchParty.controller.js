@@ -1,4 +1,4 @@
-const { _createWatchParty } = require('../services');
+const { _createWatchParty } = require('../../services');
 
 const createWatchParty = async (req, res) => {
     try {

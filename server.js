@@ -60,3 +60,5 @@ const server = require('http').createServer(app);
 initSocket(server);
 
 server.listen(port, () => console.log(`Listening on port ${port}..`));
+
+module.exports = server;
