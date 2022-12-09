@@ -1,4 +1,4 @@
-const { getOtp } = require('../watchParties.utils');
+const { getOtp } = require('../watchParty.utils');
 
 const getQueryByStatus = (status) => {
     if (status === 'started') {

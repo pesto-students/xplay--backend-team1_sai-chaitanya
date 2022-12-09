@@ -7,7 +7,6 @@ const initSocket = (server) => {
 
     io.on('connection', (socket) => {
         connections.add(socket);
-        console.log(`socket connected: ${socket.id}`);
 
         socket.on('resumeWatchParty', async (partyId) => {
             socket.join(partyId);
@@ -21,7 +20,6 @@ const initSocket = (server) => {
                 const { data: watchParty } = await _getWatchPartyById(partyId);
                 if (watchParty?.status !== 'ready') {
                     socket.to(partyId).emit('watchPartyInvalid');
-                    console.log(`watchPartyInvalid: ${partyId}`);
                 } else {
                     const {
                         data: updateWatchPartyResponse
@@ -32,7 +30,6 @@ const initSocket = (server) => {
                         // joining to a room, using the id same as watch party
                         socket.join(partyId);
                         socket.to(partyId).emit('watchPartyStarted');
-                        console.log(`watchPartyStarted: ${partyId}`);
                     }
                 }
             } catch (error) {
@@ -48,12 +45,10 @@ const initSocket = (server) => {
                 // leaving the room created for the watch party
                 socket.leave(partyId);
                 socket.to(partyId).emit('watchPartyEnded');
-                console.log(`watchPartyEnded: ${partyId}`);
             }
         });
 
         socket.on('disconnect', () => {
-            console.log(`socket disconnected: ${socket.id}`);
             connections.delete(socket);
         });
     });
