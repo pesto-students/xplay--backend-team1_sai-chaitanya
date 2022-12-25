@@ -62,6 +62,45 @@ const _getWatchPartyById = async (id) => {
 };
 
 /**
+ * @function _getWatchPartyByOtp a method to get the specific watch party by OTP
+ * @param {String} otp an otp generated for a watchParty
+ * @method GET
+ * @example http://localhost:8080/api/watchParty/otp/123456
+ * @returns data on success, error on failure
+ */
+const _getWatchPartyByOtp = async (otp) => {
+    try {
+        // get watch party by otp
+        const watchPartyCollection = await getCollection(COLLECTIONS.WATCH_PARTIES);
+        const watchParty = await watchPartyCollection.findOne({ otp: otp });
+        if (!watchParty?._id) {
+            return sendError({
+                errorSummary: 'Watch party not found!',
+            });
+        }
+        // get host user
+        const watchPartiesUsersCollection = await getCollection(COLLECTIONS.WATCH_PARTIES_USERS);
+        const watchPartyHost = await watchPartiesUsersCollection.findOne({
+            isHost: true, watchPartyId: watchParty._id
+        });
+        const usersCollection = await getCollection(COLLECTIONS.USERS);
+        const hostUser = await usersCollection.findOne(ObjectId(watchPartyHost?.userId));
+
+        // get movie by id
+        const movieCollection = await getCollection(COLLECTIONS.MOVIES);
+        const movieData = await movieCollection.findOne(ObjectId(watchParty?.movieId));
+
+        return sendSuccess({
+            host: hostUser?.email,
+            movieDetails: movieData
+        });
+    } catch (error) {
+        Sentry.captureException(error);
+        return sendError(error);
+    }
+};
+
+/**
  * @function _updateWatchParty a method to get a movie by its ObjetID
  * @param {String} partyId an ObjectID of a watchParty
  * @param {String} status to update watch party with: (started, ended)
@@ -91,5 +130,6 @@ const _updateWatchParty = async (partyId, status) => {
 module.exports = {
     _createWatchParty,
     _updateWatchParty,
-    _getWatchPartyById
+    _getWatchPartyById,
+    _getWatchPartyByOtp
 };

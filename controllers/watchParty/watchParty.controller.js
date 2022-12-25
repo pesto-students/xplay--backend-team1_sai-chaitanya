@@ -1,4 +1,4 @@
-const { _createWatchParty } = require('../../services');
+const { _createWatchParty, _getWatchPartyByOtp } = require('../../services');
 
 const createWatchParty = async (req, res) => {
     try {
@@ -9,6 +9,16 @@ const createWatchParty = async (req, res) => {
     }
 };
 
+const getWatchPartyByOtp = async (req, res) => {
+    try {
+		const data = await _getWatchPartyByOtp(req.params.otp);
+		res.send(data);
+	} catch (error) {
+		res.send(error);
+	}
+};
+
 module.exports = {
-    createWatchParty
+    createWatchParty,
+    getWatchPartyByOtp
 };
