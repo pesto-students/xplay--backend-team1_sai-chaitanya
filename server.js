@@ -47,7 +47,7 @@ app.use(Sentry.Handlers.errorHandler({
 }));
 
 // checking for the valid headers
-app.use(tokenVerifier);
+// app.use(tokenVerifier);
 
 app.use('/api/watchParty', watchPartyRouter);
 
@@ -60,5 +60,3 @@ const server = require('http').createServer(app);
 initSocket(server);
 
 server.listen(port, () => console.log(`Listening on port ${port}..`));
-
-module.exports = server;
