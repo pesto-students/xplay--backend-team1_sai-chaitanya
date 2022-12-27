@@ -28,7 +28,7 @@ XPlay allows users to watch interactive movies on Smart Devices, with ease.
 
 ## Live Link
 
-[XPlay - Watch interactive movies](https://extraordinary-puppy-70b3a7.netlify.app/)
+[XPlay - Watch interactive movies](https://p3-xplay.netlify.app/home)
 
 #### Guest Login -
 
