@@ -1,5 +1,7 @@
 # XPlay
 
+![XPlay Logo](./assets/images/xplay_logo_white.jpg)
+
 XPlay is a platform to watch interactive movies and enjoy watch parties across friends.
 
 It is designed to attract various users from the video game and movie industry. XPlay is a platform where one or more viewers can interact with the film and influence the events that unfold in the film.
@@ -7,26 +9,13 @@ It is designed to attract various users from the video game and movie industry. 
 XPlay allows users to watch interactive movies on Smart Devices, with ease.
 
 ## Table of Contents
-- [XPlay](#xplay)
-  - [Table of Contents](#table-of-contents)
-  - [Live Link](#live-link)
-      - [Guest Login -](#guest-login--)
-  - [Installation](#installation)
-    - [`yarn install`](#yarn-install)
-    - [`yarn start`](#yarn-start)
-    - [`yarn test`](#yarn-test)
-  - [System Requirements](#system-requirements)
-  - [Environment](#environment)
-  - [Designs](#designs)
-    - [HLD:](#hld)
-    - [PRD:](#prd)
-    - [Wireframes:](#wireframes)
-  - [Tech Stack](#tech-stack)
-  - [Developers](#developers)
-  - [Credits/ Guidence](#credits-guidence)
-  - [License](#license)
+1. [Demo](#demo)
+2. [Installation](#installation)
+3. [Technology Stack](#technology-stack)
+4. [Authors](#authors)
+5. [Licence](#licence)
 
-## Live Link
+## Demo
 
 [XPlay - Watch interactive movies](https://p3-xplay.netlify.app/home)
 
@@ -59,7 +48,7 @@ Your APIs are ready to get called!
 
 **_NOTE: Please checkout develop branch to run locally._**
 
-## System Requirements
+### System Requirements
 
 Following system requirements need to be met in order for this application to run -
 
@@ -67,7 +56,7 @@ Following system requirements need to be met in order for this application to ru
 
 - Any common desktop OS including MacOS, Windows, and Linux is supported
 
-## Environment
+### Environment
 
 Following environment variables need to be set for the application to run -
 
@@ -85,7 +74,7 @@ Following environment variables need to be set for the application to run -
 
 **_NOTE: .env-sample in project root also has complete list of environment variables used._**
 
-## Designs
+<!-- ## Designs
 
 ### HLD:
 
@@ -99,9 +88,9 @@ Following environment variables need to be set for the application to run -
 
 - [XPlay Wireframes for Desktop - Figma](https://www.figma.com/file/n1vnT5S3d5UBiqxmmzrP4B/XPlay?node-id=0%3A1)
 
-- [XPlay Wireframes for Mobile - Figma](https://www.figma.com/file/n1vnT5S3d5UBiqxmmzrP4B/XPlay?node-id=228%3A390)
+- [XPlay Wireframes for Mobile - Figma](https://www.figma.com/file/n1vnT5S3d5UBiqxmmzrP4B/XPlay?node-id=228%3A390) -->
 
-## Tech Stack
+## Technology Stack
 
 -   Backend - NodeJS, Express, Socket.io
 
@@ -115,15 +104,17 @@ Following environment variables need to be set for the application to run -
 
 -   Tools - Version Control System (GIT), Github
 
-## Developers
+## Authors
 
 - [Tushar Walzade](https://github.com/tusharwalzade216)
 
 - [Suresh Kumar](https://github.com/sureshmaverick)
 
-## Credits/ Guidence
+<details>
+<summary>Credits/ Guidence</summary>
 
-- [Sai Chaitanya Ramineni](https://github.com/sairamin)
+-   [Sai Chaitanya Ramineni](https://github.com/sairamin)
+</details>
 
 ## License
 
